@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://vercelcn.com/ads-widget.js"></script>
+    <title>搜索筛选 - 星辰影视</title>
+    <meta name="description" content="星辰影视搜索页支持按片名、地区、类型、年份和标签筛选高清电影与热门剧集。">
+    <meta name="keywords" content="搜索,日韩,最新电影,免费观看,高清播放,热门资源,小众,高分">
+    <link rel="stylesheet" href="./assets/theme.css">
+    <link rel="stylesheet" href="./assets/site.css">
+    <script src="./assets/search-data.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <nav class="nav-shell" aria-label="主导航">
+        <a class="brand" href="./index.html" aria-label="星辰影视">
+            <span class="brand-mark">星</span>
+            <span class="brand-text">
+                <strong>星辰影视</strong>
+                <small>免费看高清视频 热播榜单精选</small>
+            </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="展开导航" data-nav-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-panel" data-nav-panel>
+            <a href="./index.html">首页</a>
+            <a href="./categories.html">全部分类</a>
+            <a href="./ranking.html">热门榜单</a>
+            <a href="./search.html">搜索筛选</a>
+            <div class="nav-dropdown">
+                <button type="button">片库专区</button>
+                <div class="nav-dropdown-menu">
+                    <a href="./category-01.html">热播精选</a>
+                    <a href="./category-02.html">日韩风向</a>
+                    <a href="./category-03.html">高清电影</a>
+                    <a href="./category-04.html">剧集连载</a>
+                    <a href="./category-05.html">动作冒险</a>
+                    <a href="./category-06.html">悬疑犯罪</a>
+                    <a href="./category-07.html">爱情喜剧</a>
+                    <a href="./category-08.html">科幻奇幻</a>
+                </div>
+            </div>
+            <form class="nav-search" action="./search.html" method="get" data-search-form>
+                <input type="search" name="q" placeholder="搜索片名、地区、标签" aria-label="搜索片名、地区、标签">
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+    </nav>
+</header>
+<main class="page-main" data-search-page>
+    <section class="page-hero slim-hero">
+        <div class="section-shell">
+            <span class="section-kicker">Search</span>
+            <h1>搜索与筛选</h1>
+            <p>输入片名、地区、类型、年份、题材或标签，快速定位想看的内容。</p>
+        </div>
+    </section>
+    <section class="section-shell search-page-panel">
+        <form class="search-tools" data-search-tools>
+            <input type="search" name="q" placeholder="搜索片名、地区、类型、标签" data-search-input>
+            <select name="type" data-type-filter>
+                <option value="">全部类型</option>
+            </select>
+            <select name="year" data-year-filter>
+                <option value="">全部年份</option>
+            </select>
+            <button type="submit">筛选</button>
+        </form>
+        <div class="search-result-grid" data-search-results></div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="footer-shell">
+        <div>
+            <a class="footer-brand" href="./index.html">星辰影视</a>
+            <p>本频道专注于日韩影视领域，提供在线高清视频、免费资源和热播内容，每日更新海量正版剧集，附带排行榜与精选盘点。</p>
+        </div>
+        <div class="footer-links">
+            <a href="./index.html">首页</a>
+            <a href="./categories.html">全部分类</a>
+            <a href="./ranking.html">热门榜单</a>
+            <a href="./search.html">搜索筛选</a>
+                <a href="./category-01.html">热播精选</a>
+                <a href="./category-02.html">日韩风向</a>
+                <a href="./category-03.html">高清电影</a>
+                <a href="./category-04.html">剧集连载</a>
+                <a href="./category-05.html">动作冒险</a>
+                <a href="./category-06.html">悬疑犯罪</a>
+                <a href="./category-07.html">爱情喜剧</a>
+                <a href="./category-08.html">科幻奇幻</a>
+                <a href="./category-09.html">恐怖惊悚</a>
+                <a href="./category-10.html">家庭剧情</a>
+        </div>
+        <div class="footer-copy">© 2026 星辰影视</div>
+    </div>
+</footer>
+<script src="./assets/site.js" defer></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
